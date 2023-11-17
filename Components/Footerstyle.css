@@ -44,3 +44,32 @@
 	margin-bottom: 40px;
 	font-weight: bold;
  }
+ .footerlink {
+    margin-bottom: 10px;
+}
+
+.footerlink a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footerlink a:hover {
+    color: #007bff; /* Change to your preferred hover color */
+}
+img{
+	width: 150px; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+#no-btn{
+	background-color: #0e0325;
+	color: #fff;
+	margin-bottom: 0px;
+	font-size: 15px;
+	margin-left: 0;
+	text-decoration: none;
+	font-weight: bold;
+}

@@ -1,0 +1,89 @@
+.month-layout{
+    background: #2c375f;
+    width: auto;
+    height: auto;
+    color: rgb(12, 12, 12);
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+  background-color: #000000; 
+  padding: 10px;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  background-color: #000000;
+  margin: 0;
+  padding: 0px 0px 10px 0px;
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1); /* Light-colored box shadow */
+  transition: box-shadow 0.3s ease; /* Adding transition for a smoother effect */
+}
+
+.days:hover {
+  box-shadow: 0px 8px 12px rgba(255, 255, 255, 0.2); /* Adjusted box shadow on hover */
+}
+.day {
+  display: block;
+  flex-grow: 1;
+  flex-basis: 14%;
+  padding: 2px 2px 25px 2px;
+  border: 2px;
+  border-style: solid;
+  border-color: #8193d6; /* Dark gray border color */
+  background: #000000; /* Light background color */
+  margin: 15px 10px;
+  text-align: center;
+  color: #333; /* Dark text color */
+  border-radius: 10px;
+  
+
+  transition: background 0.3s ease, color 0.3s ease; /* Adding transitions for smoother hover effect */
+}
+
+.day:hover {
+  background: #1a1a1a; /* Blue background color on hover */
+  color: #fff; /* White text color on hover */
+  cursor: pointer;
+}
+
+.button {
+  background: rgb(83, 131, 170); /* Blue button color */
+  color: #fff; /* White text color */
+  padding: 8px;
+  margin: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease; /* Adding transitions for smoother hover effect */
+}
+
+.button:hover {
+  background: rgb(1, 43, 86); /* Dark gray background color on hover */
+  color: #fff; /* White text color on hover */
+}
+p{
+    color: rgb(254, 252, 252);
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}.button1 {
+  background: rgb(83, 131, 170); /* Blue button color */
+  color: #fff; /* White text color */
+  padding: 8px 10px;
+  margin: 2px;
+  margin-top: 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease; /* Adding transitions for smoother hover effect */
+}
+
+.button1:hover {
+  background: rgb(1, 43, 86); /* Dark gray background color on hover */
+  color: #fff; /* White text color on hover */
+}

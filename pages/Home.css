@@ -15,9 +15,9 @@ body{
 #signup-btn{
     color: white;
     background-color: #0093ff;
-    padding: 10px 30px 10px 30px;
-    margin: 5px 5px 5px 5px;
-    border-radius: 8%;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10%;
     border-color: transparent;
     transition-duration: 0.4s;
     font-size: 15px;
@@ -61,7 +61,7 @@ font-size: 30px;
 }
 
 .img-wrapper{
-    margin-top: 1rem;
+    margin-top: 0;
     display: flex;
     position: relative;
 }
@@ -71,4 +71,7 @@ font-size: 30px;
 .card h2{
     margin-top: 30px;
     font-size: 30px;
+}
+.name{
+background-color: transparent;
 }

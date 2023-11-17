@@ -1,0 +1,123 @@
+/* src/BudgetPlanner.css
+.budget-planner-container {
+    background-image: url('photo-1625225233840-695456021cde.avif'); /* Add your background image path */
+    /* background-size: cover;
+    color: white;
+    padding: 20px; */
+    /* margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-attachment: fixed;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Arial', sans-serif;
+  color: black;
+  }
+  
+  .budget-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 530px;
+    margin-right: 530px;
+  }
+  
+  .budget-list {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  } */ 
+
+  /* src/BudgetPlanner.css */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('photo-1625225233840-695456021cde.avif'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed background */
+    font-family: 'Arial', sans-serif;
+    color:white;
+  }
+  
+  option{
+    color: black;
+
+  }
+
+  .budget-planner-container {
+    width: 80%;
+    max-width: 600px; /* Adjust as needed */
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .budget-form label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .budget-form select,
+  .budget-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .budget-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .budget-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .budget-list {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .budget-list h2 {
+    margin-bottom: 10px;
+  }
+  
+  .budget-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .budget-list li {
+    border-bottom: 1px solid #555;
+    padding: 10px 0;
+  }
+  
+  /* ... (rest of your styles) */
+  
+
+  .heading{
+
+    padding-top: 0.5em;
+    font-size:xx-large;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+  }
+
+  .list{
+    color: black;
+  }
+  

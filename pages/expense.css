@@ -1,0 +1,104 @@
+/* Expense.css */
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0e0325; /* Dark background color */
+  color: #ecf0f1; /* Light text color */
+  padding: 40px;
+  border-radius: 10px; /* Slightly rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  width: 60%; /* Set the width to 80% of the parent container */
+  max-width: 600px; /* Set a maximum width for the container */
+  margin: 0 520px; /* Center the container horizontally */
+}
+
+/* Styling for AddTransview component */
+input,
+select {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #3498db; /* Blue button color */
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Styling for Overview component */
+.balance {
+  font-size: 1.5em; /* Slightly larger font size */
+  font-weight: bold;
+  margin-bottom: 15px; /* Increased margin */
+}
+
+.button {
+  background-color: #2ecc71; /* Green button color */
+}
+
+.addTransaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.transactionType {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px; /* Increased margin */
+}
+
+/* Styling for Expense and Income sections */
+.section {
+  margin-bottom: 30px; /* Increased margin */
+}
+
+.expense {
+  color: #e74c3c; /* Red text color for expenses */
+}
+
+.income {
+  color: #27ae60; /* Green text color for income */
+}
+
+/* Transaction component styles */
+h3 {
+  color: #7dacdc; /* Darker text color for headings */
+}
+
+input[type="text"] {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* TransactionCell component styles */
+.cell {
+  padding: 15px; /* Increased padding */
+  margin: 10px 0; /* Increased margin */
+}
+
+.expense-cell {
+  background-color: #e74c3c; /* Red background color for expense cells */
+  color: #fff;
+}
+
+.income-cell {
+  background-color: #2ecc71; /* Green background color for income cells */
+  color: #333; /* Darker text color for income cells */
+}
