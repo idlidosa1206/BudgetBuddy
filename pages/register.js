@@ -1,18 +1,43 @@
 import React, { useState } from "react";
+import {useNavigate} from 'react-router-dom';
 import Checkbox from "../Components/checkbox.js";
 import "./login.css";
 import image from "../img/login.png";
 const Register = (props) => {
+  const navigate= useNavigate();
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [name, setName] = useState('');
     const[username,setUsername]=useState('');
  
     const[gusername,setGusername]=useState('');
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(email);
-    }
+        try {
+          const response = await fetch('http://localhost:3000/register', {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({name, email, username, pass}),
+          });
+  
+          if (response.ok) {
+            const responseData = await response.json(); // Parse response body as JSON
+            console.log('Register successful:', responseData.message);
+            navigate(responseData.redirect);
+            
+          } else {
+            // Handle login failure
+            const errorData = await response.json(); // Parse error response body as JSON
+            console.error('Register failed:', errorData.message);
+          }
+        } catch (error) {
+          console.error("Error during Register:", error);
+        }
+      
+      };
+    
 
     return (
       <div
