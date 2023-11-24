@@ -1,14 +1,17 @@
-import axios from 'axios'
+import axios from 'axios';
+import { useNavigate} from 'react-router-dom';
 import "./login.css";
 import { useState } from 'react';
 const Login = (props) => {
+  const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleLogin = async () => {
+    const handleLogin =  async(e) => {
+      e.preventDefault();
       // Make an API call to the login endpoint
       try {
-        const response = await fetch("http://localhost:3001/login", {
+        const response = await fetch('http://localhost:3000/login', {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -17,15 +20,20 @@ const Login = (props) => {
         });
 
         if (response.ok) {
-          // Redirect to another page on successful login
-          window.location.href = "/dashboard";
+          const responseData = await response.json(); // Parse response body as JSON
+          console.log('Login successful:', responseData.message);
+          
+          navigate(responseData.redirect);
+                    
         } else {
           // Handle login failure
-          console.error("Login failed");
+           const errorData = await response.json(); // Parse error response body as JSON
+      console.error('Login failed:', errorData.message);
         }
       } catch (error) {
         console.error("Error during login:", error);
       }
+    
     };
 
 
@@ -33,8 +41,8 @@ const Login = (props) => {
     return (
       <div className="auth-form-container">
         <h2 className="header">Login</h2>
-        <form className="login-form">
-          <label className="loglabel" htmlFor="email">
+        <form className="login-form" method='post' action='/login'>
+          <label className="loglabel" htmlFor="username">
             username
           </label>
           <input
@@ -45,8 +53,7 @@ const Login = (props) => {
             placeholder="your username"
             id="username"
             name="username"
-            required
-          />
+            required />
           <label className="loglabel" htmlFor="password">
             password
           </label>
